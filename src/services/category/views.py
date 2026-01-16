@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
-from .models import Category
-from .serializers import CategorySerializer
+from services.category.models.models import Category
+from services.category.serializers.serializers import CategorySerializer
 
 class CategoryViewSet(ModelViewSet):
     queryset = Category.objects.all()
