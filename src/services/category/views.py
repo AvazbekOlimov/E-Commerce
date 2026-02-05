@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import viewsets, permissions
-from services.category.models.models import Category
+from services.category.models.category import Category
 from services.category.serializers.serializers import CategorySerializer
 from services.user.permissions import IsAdminUser, IsVendorUser
 
